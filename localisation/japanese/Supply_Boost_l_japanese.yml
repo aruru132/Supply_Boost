@@ -1,0 +1,38 @@
+﻿l_japanese:
+# Supply Boostディシジョンタイトル
+SB: "補給計画"
+# Supply Boostディシジョン説明（説明文にはdescが付く）
+SB_desc: "我々の軍隊は、より多くの物資を必要とするようになっている。補給線を改善することで、前線の部隊により多くの物資を届けることができるようになるだろう。"
+
+# Supply Boostディシジョン名
+emergency_construction: "補給改善計画の実施"
+# Supply Boostディシジョン説明（説明文にはdescが付く）
+emergency_construction_desc: "我々の軍隊は、より多くの物資を必要とするようになっている。補給線を改善することで、前線の部隊により多くの物資を届けることができるようになるだろう。"
+
+authorize_overloading: "コンテナ内の過積載許可"
+authorize_overloading_desc: "我々の軍隊は、より多くの物資を届ける必要がある。時には規則を破ることも必要だ。過積載を許可することで、前線の部隊により多くの物資を届けることができるようになるだろう。"
+
+setup_temporary_supply_base: "臨時補給基地の設置"
+setup_temporary_supply_base_desc: "我々の軍隊は、より多くの物資を届ける必要がある。前線に臨時の補給基地を設置することで、部隊により多くの物資を届けることができるようになるだろう。"
+
+requisition_civilian_trucks: "民間トラックの徴用"
+requisition_civilian_trucks_desc: "我々の軍隊は、より多くの物資を届ける必要がある。民間のトラックを徴用することで、前線の部隊により多くの物資を届けることができるようになるだろう。"
+
+deploy_railway_regiments: "鉄道連隊の展開"
+deploy_railway_regiments_desc: "我々の軍隊は、より多くの物資を届ける必要がある。鉄道連隊を展開することで、前線に早急な鉄道網を整備することができるようになるだろう。"
+
+emergency_airlift_request: "緊急空輸要請"
+emergency_airlift_request_desc: "我々の軍隊は、より多くの物資を届ける必要がある。緊急空輸を要請することで、前線の部隊により多くの物資を届けることができるようになるだろう。"
+
+track_gauge_conversion: "軌道変換の実施"
+track_gauge_conversion_desc: "我々の軍隊は、敵の占領地に物資を届ける必要がある。軌道変換を実施することで、占領地の鉄道網を利用して前線の部隊により多くの物資を届けることができるようになるだろう。"
+
+logistics_modernization: "物流の近代化"
+logistics_modernization_desc: "我々の軍隊は、より多くの物資を届ける必要がある。物流の近代化を進めることで、各地の補給線を効率化し、展開している部隊により多くの物資を届けることができるようになるだろう。"
+
+standardization_of_equipment: "標準規格化"
+standardization_of_equipment_desc: "我々の軍隊は、より多くの物資を届ける必要がある。装備の標準規格の整備を進めることで、補給線を効率化し、前線の部隊により多くの物資を届けることができるようになるだろう。"
+
+container_and_pallet_system: "コンテナ・パレットシステムの導入"
+container_and_pallet_system_desc: "我々の軍隊は、より多くの物資を届ける必要がある。コンテナ・パレットシステムの導入を進めることで、補給線を効率化し、前線の部隊により多くの物資を届けることができるようになるだろう。"
+

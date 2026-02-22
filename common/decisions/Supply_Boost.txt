@@ -1,0 +1,585 @@
+# Supply_Boostディシジョン
+# SB = Supply Boostカテゴリ名
+SB = {
+    # ディシジョンの定義
+    # ディシジョン名
+    emergency_construction = {
+        # ディシジョンのアイコン
+        icon = generic_industry
+
+        #ディシジョンの表示優先度
+        priority = 10
+
+        # ディシジョンの実行条件（例：特定の技術が研究されていること）
+        available = {
+            # 特定の技術が研究されていることを条件にする
+            has_tech = tech_logistics_company
+        }
+
+        # ディシジョンの表示条件（例：個別の国家でのみ閲覧できるようにする）
+        visible = {
+            always = yes
+        }
+
+        #実行権限と表示権限 
+        allowed = {
+            #全国家に常に表示する
+            always = yes
+        }
+
+        # 一度きりの実行にしますか？（yesの場合、実行後は再度表示されなくなります）
+        fire_only_once = yes
+
+        # AIのディシジョン優先度
+        ai_will_do = {
+            factor = 1
+        }
+
+        # ディシジョン有効化に必要な政治力
+        cost = 200
+
+        # 完了してから再度選べるようになるまでのクールダウン期間（例：365日間）
+        # days_re_enable = 
+
+        # ディシジョン効果日数（例：180日間効果が続く）
+        # days_remove = 
+
+        # ステータス補正（例：建築速度上昇）
+        # modifier = {
+        # }
+
+        # ディシジョン終了時に発動される効果（例：政治力付与）
+        # remove_effect = {
+        # }
+
+        # 国家全体に対して発動される効果（例：研究速度上昇）
+        complete_effect = {
+            # 「近代化済み」という目印を国に付ける
+            set_country_flag = logistics_modernized_flag
+            log = "Logistics Modernization Flag set for [?root.GetTag]"
+        }
+    }
+
+    authorize_overloading = {
+        # ディシジョンのアイコン
+        icon = generic_industry
+
+        #ディシジョンの表示優先度
+        priority = 10
+
+        # ディシジョンの実行条件（例：特定の技術が研究されていること）
+        available = {
+            # 特定の技術が研究されていることを条件にする
+            has_tech = tech_logistics_company
+        }
+
+        # ディシジョンの表示条件（例：個別の国家でのみ閲覧できるようにする）
+        visible = {
+            has_country_flag = logistics_modernized_flag
+        }
+
+        #実行権限と表示権限 
+        allowed = {
+            #全国家に常に表示する
+            always = yes
+        }
+
+        # 一度きりの実行にしますか？（yesの場合、実行後は再度表示されなくなります）
+        fire_only_once = no
+
+        # AIのディシジョン優先度
+        ai_will_do = {
+            factor = 1
+        }
+
+        # ディシジョン有効化に必要な政治力
+        cost = 200
+
+        # 完了してから再度選べるようになるまでのクールダウン期間（例：365日間）
+        days_re_enable = 14
+
+        # ディシジョン効果日数（例：180日間効果が続く）
+        days_remove = 180
+
+        # ステータス補正（例：建築速度上昇）
+        modifier = {
+
+        }
+
+        # ディシジョン終了時に発動される効果（例：政治力付与）
+        remove_effect = {
+            
+        }
+
+        # 国家全体に対して発動される効果（例：研究速度上昇）
+        complete_effect = {
+            
+        }
+    }
+
+    setup_temporary_supply_base = {
+        # ディシジョンのアイコン
+        icon = generic_industry
+
+        #ディシジョンの表示優先度
+        priority = 10
+
+        # ディシジョンの実行条件（例：特定の技術が研究されていること）
+        available = {
+            # 特定の技術が研究されていることを条件にする
+            has_tech = tech_logistics_company
+        }
+
+        # ディシジョンの表示条件（例：個別の国家でのみ閲覧できるようにする）
+        visible = {
+            has_country_flag = logistics_modernized_flag
+        }
+
+        #実行権限と表示権限 
+        allowed = {
+            #全国家に常に表示する
+            always = yes
+        }
+
+        # 一度きりの実行にしますか？（yesの場合、実行後は再度表示されなくなります）
+        fire_only_once = no
+
+        # AIのディシジョン優先度
+        ai_will_do = {
+            factor = 1
+        }
+
+        # ディシジョン有効化に必要な政治力
+        cost = 200
+
+        # 完了してから再度選べるようになるまでのクールダウン期間（例：365日間）
+        days_re_enable = 14
+
+        # ディシジョン効果日数（例：180日間効果が続く）
+        days_remove = 180
+
+        # ステータス補正（例：建築速度上昇）
+        modifier = {
+
+        }
+
+        # ディシジョン終了時に発動される効果（例：政治力付与）
+        remove_effect = {
+            
+        }
+
+        # 国家全体に対して発動される効果（例：研究速度上昇）
+        complete_effect = {
+            
+        }
+    }
+
+    requisition_civilian_trucks = {
+        # ディシジョンのアイコン
+        icon = generic_industry
+
+        #ディシジョンの表示優先度
+        priority = 10
+
+        # ディシジョンの実行条件（例：特定の技術が研究されていること）
+        available = {
+            # 特定の技術が研究されていることを条件にする
+            has_tech = tech_logistics_company
+        }
+
+        # ディシジョンの表示条件（例：個別の国家でのみ閲覧できるようにする）
+        visible = {
+            has_country_flag = logistics_modernized_flag
+        }
+
+        #実行権限と表示権限 
+        allowed = {
+            #全国家に常に表示する
+            always = yes
+        }
+
+        # 一度きりの実行にしますか？（yesの場合、実行後は再度表示されなくなります）
+        fire_only_once = no
+
+        # AIのディシジョン優先度
+        ai_will_do = {
+            factor = 1
+        }
+
+        # ディシジョン有効化に必要な政治力
+        cost = 200
+
+        # 完了してから再度選べるようになるまでのクールダウン期間（例：365日間）
+        days_re_enable = 14
+
+        # ディシジョン効果日数（例：180日間効果が続く）
+        days_remove = 180
+
+        # ステータス補正（例：建築速度上昇）
+        modifier = {
+
+        }
+
+        # ディシジョン終了時に発動される効果（例：政治力付与）
+        remove_effect = {
+            
+        }
+
+        # 国家全体に対して発動される効果（例：研究速度上昇）
+        complete_effect = {
+            
+        }
+    }
+
+    deploy_railway_regiments = {
+        # ディシジョンのアイコン
+        icon = generic_industry
+
+        #ディシジョンの表示優先度
+        priority = 10
+
+        # ディシジョンの実行条件（例：特定の技術が研究されていること）
+        available = {
+            # 特定の技術が研究されていることを条件にする
+            has_tech = tech_logistics_company
+        }
+
+        # ディシジョンの表示条件（例：個別の国家でのみ閲覧できるようにする）
+        visible = {
+            has_country_flag = logistics_modernized_flag
+        }
+
+        #実行権限と表示権限 
+        allowed = {
+            #全国家に常に表示する
+            always = yes
+        }
+
+        # 一度きりの実行にしますか？（yesの場合、実行後は再度表示されなくなります）
+        fire_only_once = no
+
+        # AIのディシジョン優先度
+        ai_will_do = {
+            factor = 1
+        }
+
+        # ディシジョン有効化に必要な政治力
+        cost = 200
+
+        # 完了してから再度選べるようになるまでのクールダウン期間（例：365日間）
+        days_re_enable = 14
+
+        # ディシジョン効果日数（例：180日間効果が続く）
+        days_remove = 180
+
+        # ステータス補正（例：建築速度上昇）
+        modifier = {
+
+        }
+
+        # ディシジョン終了時に発動される効果（例：政治力付与）
+        remove_effect = {
+            
+        }
+
+        # 国家全体に対して発動される効果（例：研究速度上昇）
+        complete_effect = {
+            
+        }
+    }
+
+    emergency_airlift_request = {
+        # ディシジョンのアイコン
+        icon = generic_industry
+
+        #ディシジョンの表示優先度
+        priority = 10
+
+        # ディシジョンの実行条件（例：特定の技術が研究されていること）
+        available = {
+            # 特定の技術が研究されていることを条件にする
+            has_tech = tech_logistics_company
+        }
+
+        # ディシジョンの表示条件（例：個別の国家でのみ閲覧できるようにする）
+        visible = {
+            has_country_flag = logistics_modernized_flag
+        }
+
+        #実行権限と表示権限 
+        allowed = {
+            #全国家に常に表示する
+            always = yes
+        }
+
+        # 一度きりの実行にしますか？（yesの場合、実行後は再度表示されなくなります）
+        fire_only_once = no
+
+        # AIのディシジョン優先度
+        ai_will_do = {
+            factor = 1
+        }
+
+        # ディシジョン有効化に必要な政治力
+        cost = 200
+
+        # 完了してから再度選べるようになるまでのクールダウン期間（例：365日間）
+        days_re_enable = 14
+
+        # ディシジョン効果日数（例：180日間効果が続く）
+        days_remove = 180
+
+        # ステータス補正（例：建築速度上昇）
+        modifier = {
+            # --- メイン効果 ---
+            air_supply_efficiency = 0.7        # 空中補給効率大幅アップ(+70%)
+            transport_plane_range_factor = 0.2 # 航続距離アップ
+        
+            # --- 部隊への恩恵 ---
+            supply_consumption_factor = -0.15 # 消費を15%抑制
+            out_of_supply_factor = -0.1       # 補給切れペナルティを20%軽減
+        
+            # --- リスク ---
+            transport_plane_attrition_factor = 0.5 # 輸送機の消耗が激しくなる
+        }
+
+        # ディシジョン終了時に発動される効果（例：政治力付与）
+        remove_effect = {
+            
+        }
+
+        # 国家全体に対して発動される効果（例：研究速度上昇）
+        complete_effect = {
+            # 実行した瞬間に、空軍経験値を少し消費する（作戦立案のコスト）
+            add_experience_air = -5
+        }
+    }
+
+    track_gauge_conversion = {
+        # ディシジョンのアイコン
+        icon = generic_industry
+
+        #ディシジョンの表示優先度
+        priority = 10
+
+        # ディシジョンの実行条件（例：特定の技術が研究されていること）
+        available = {
+            # 特定の技術が研究されていることを条件にする
+            has_tech = tech_logistics_company
+        }
+
+        # ディシジョンの表示条件（例：個別の国家でのみ閲覧できるようにする）
+        visible = {
+            has_country_flag = logistics_modernized_flag
+        }
+
+        #実行権限と表示権限 
+        allowed = {
+            #全国家に常に表示する
+            always = yes
+        }
+
+        # 一度きりの実行にしますか？（yesの場合、実行後は再度表示されなくなります）
+        fire_only_once = no
+
+        # AIのディシジョン優先度
+        ai_will_do = {
+            factor = 1
+        }
+
+        # ディシジョン有効化に必要な政治力
+        cost = 200
+
+        # 完了してから再度選べるようになるまでのクールダウン期間（例：365日間）
+        days_re_enable = 14
+
+        # ディシジョン効果日数（例：180日間効果が続く）
+        days_remove = 180
+
+        # ステータス補正（例：建築速度上昇）
+        modifier = {
+
+        }
+
+        # ディシジョン終了時に発動される効果（例：政治力付与）
+        remove_effect = {
+            
+        }
+
+        # 国家全体に対して発動される効果（例：研究速度上昇）
+        complete_effect = {
+            
+        }
+    }
+
+    logistics_modernization = {
+        # ディシジョンのアイコン
+        icon = generic_industry
+
+        #ディシジョンの表示優先度
+        priority = 10
+
+        # ディシジョンの実行条件（例：特定の技術が研究されていること）
+        available = {
+            # 特定の技術が研究されていることを条件にする
+            has_tech = tech_logistics_company
+        }
+
+        # ディシジョンの表示条件（例：個別の国家でのみ閲覧できるようにする）
+        visible = {
+            has_country_flag = logistics_modernized_flag
+        }
+
+        #実行権限と表示権限 
+        allowed = {
+            #全国家に常に表示する
+            always = yes
+        }
+
+        # 一度きりの実行にしますか？（yesの場合、実行後は再度表示されなくなります）
+        fire_only_once = no
+
+        # AIのディシジョン優先度
+        ai_will_do = {
+            factor = 1
+        }
+
+        # ディシジョン有効化に必要な政治力
+        cost = 200
+
+        # 完了してから再度選べるようになるまでのクールダウン期間（例：365日間）
+        days_re_enable = 14
+
+        # ディシジョン効果日数（例：180日間効果が続く）
+        days_remove = 180
+
+        # ステータス補正（例：建築速度上昇）
+        modifier = {
+
+        }
+
+        # ディシジョン終了時に発動される効果（例：政治力付与）
+        remove_effect = {
+            
+        }
+
+        # 国家全体に対して発動される効果（例：研究速度上昇）
+        complete_effect = {
+            
+        }
+    }
+
+    standardization_of_equipment = {
+        # ディシジョンのアイコン
+        icon = generic_industry
+
+        #ディシジョンの表示優先度
+        priority = 10
+
+        # ディシジョンの実行条件（例：特定の技術が研究されていること）
+        available = {
+            # 特定の技術が研究されていることを条件にする
+            has_tech = tech_logistics_company
+        }
+
+        # ディシジョンの表示条件（例：個別の国家でのみ閲覧できるようにする）
+        visible = {
+            has_country_flag = logistics_modernized_flag
+        }
+
+        #実行権限と表示権限 
+        allowed = {
+            #全国家に常に表示する
+            always = yes
+        }
+
+        # 一度きりの実行にしますか？（yesの場合、実行後は再度表示されなくなります）
+        fire_only_once = no
+
+        # AIのディシジョン優先度
+        ai_will_do = {
+            factor = 1
+        }
+
+        # ディシジョン有効化に必要な政治力
+        cost = 200
+
+        # 完了してから再度選べるようになるまでのクールダウン期間（例：365日間）
+        days_re_enable = 14
+
+        # ディシジョン効果日数（例：180日間効果が続く）
+        days_remove = 180
+
+        # ステータス補正（例：建築速度上昇）
+        modifier = {
+
+        }
+
+        # ディシジョン終了時に発動される効果（例：政治力付与）
+        remove_effect = {
+            
+        }
+
+        # 国家全体に対して発動される効果（例：研究速度上昇）
+        complete_effect = {
+            
+        }
+    }
+
+    container_and_pallet_system = {
+        # ディシジョンのアイコン
+        icon = generic_industry
+
+        #ディシジョンの表示優先度
+        priority = 10
+
+        # ディシジョンの実行条件（例：特定の技術が研究されていること）
+        available = {
+            # 特定の技術が研究されていることを条件にする
+            has_tech = tech_logistics_company
+        }
+
+        # ディシジョンの表示条件（例：個別の国家でのみ閲覧できるようにする）
+        visible = {
+            has_country_flag = logistics_modernized_flag
+        }
+
+        #実行権限と表示権限 
+        allowed = {
+            #全国家に常に表示する
+            always = yes
+        }
+
+        # 一度きりの実行にしますか？（yesの場合、実行後は再度表示されなくなります）
+        fire_only_once = no
+
+        # AIのディシジョン優先度
+        ai_will_do = {
+            factor = 1
+        }
+
+        # ディシジョン有効化に必要な政治力
+        cost = 200
+
+        # 完了してから再度選べるようになるまでのクールダウン期間（例：365日間）
+        days_re_enable = 14
+
+        # ディシジョン効果日数（例：180日間効果が続く）
+        days_remove = 180
+
+        # ステータス補正（例：建築速度上昇）
+        modifier = {
+
+        }
+
+        # ディシジョン終了時に発動される効果（例：政治力付与）
+        remove_effect = {
+            
+        }
+
+        # 国家全体に対して発動される効果（例：研究速度上昇）
+        complete_effect = {
+            
+        }
+    }
+}
