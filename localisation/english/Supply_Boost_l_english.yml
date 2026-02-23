@@ -1,5 +1,36 @@
 ﻿l_english:
-# Supply Boostディシジョンタイトル
-SB: "補給計画"
-Supply_Boost: "補給改善計画"
-Supply_Boost_DESC: "我々の軍隊は、より多くの物資を必要とするようになっている。補給線を改善することで、前線の部隊により多くの物資を届けることができるようになるだろう。"
+ # Supply Boost Category Title
+ SB: "Strategic Supply Planning"
+ # Supply Boost Category Description
+ SB_desc: "Our armed forces require an increasingly vast amount of materiel to sustain operations. By optimizing our logistics networks, we ensure a steady flow of supplies to the frontline units."
+
+ # Decisions
+ emergency_construction: "Implement Emergency Supply Plan"
+ emergency_construction_desc: "The current logistical burden exceeds our standard capacity. By prioritizing emergency infrastructure projects, we can secure the vital flow of goods to our troops."
+
+ authorize_overloading: "Authorize Container Overloading"
+ authorize_overloading_desc: "Desperate times call for pragmatic measures. By bypassing standard safety regulations and allowing cargo overloading, we can maximize the throughput of every shipment to the front."
+
+ setup_temporary_supply_base: "Establish Forward Supply Bases"
+ setup_temporary_supply_base_desc: "Static supply lines are insufficient for rapid advances. Establishing temporary forward bases will decrease the distance between our stockpiles and the fighting men."
+
+ requisition_civilian_trucks: "Requisition Civilian Vehicles"
+ requisition_civilian_trucks_desc: "The military's transport fleet is stretched thin. By pressing civilian trucks into service, we can bolster our motorized supply columns immediately."
+
+ deploy_railway_regiments: "Deploy Railway Regiments"
+ deploy_railway_regiments_desc: "Railway engineers are essential for a modern war effort. Deploying specialized regiments will allow for the rapid repair and expansion of our rail networks."
+
+ emergency_airlift_request: "Emergency Airlift Request"
+ emergency_airlift_request_desc: "Units in isolated or critical sectors cannot wait for ground transport. Requesting an emergency airlift will provide immediate relief via cargo aircraft."
+
+ track_gauge_conversion: "Commence Track Gauge Conversion"
+ track_gauge_conversion_desc: "Advancing into enemy territory often reveals incompatible rail systems. Converting these tracks to our standard gauge is vital for deep-strike logistics."
+
+ logistics_modernization: "Modernize National Logistics"
+ logistics_modernization_desc: "Our current logistical doctrine is outdated. By modernizing our transport management and infrastructure, we can achieve peak efficiency across all theaters."
+
+ standardization_of_equipment: "Material Standardization"
+ standardization_of_equipment_desc: "Diversity in equipment parts causes logistical nightmares. Enforcing strict standardization will streamline the supply chain and simplify maintenance for frontline units."
+
+ container_and_pallet_system: "Introduce Container & Pallet System"
+ container_and_pallet_system_desc: "The introduction of standardized containers and pallets will revolutionize loading times, allowing for seamless transfers between rail, truck, and ship."
