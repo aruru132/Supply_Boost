@@ -1,10 +1,8 @@
 ﻿l_english:
- # Supply Boost Category Title
+
  SB: "Strategic Supply Planning"
- # Supply Boost Category Description
  SB_desc: "Our armed forces require an increasingly vast amount of materiel to sustain operations. By optimizing our logistics networks, we ensure a steady flow of supplies to the frontline units."
 
- # Decisions
  emergency_construction: "Implement Emergency Supply Plan"
  emergency_construction_desc: "The current logistical burden exceeds our standard capacity. By prioritizing emergency infrastructure projects, we can secure the vital flow of goods to our troops."
 

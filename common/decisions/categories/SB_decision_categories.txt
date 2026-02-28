@@ -1,24 +1,24 @@
-# Supply Boostカテゴリ
-# SB = Supply Boostカテゴリ
+# ディシジョンカテゴリ識別名（今回はSupplyBoostからSBに）
 SB = {
-	# Supply Boostカテゴリの定義
-	#実行権限と表示権限 
+	# カテゴリの設定
+
+	# どの国家で使えるようにするか
 	allowed = {
-		#全国家に常に表示する
+		# 全国家で常に表示！（全国家共通要素にしたいので）
 		always = yes
 	}
 
-	#カテゴリのアイコンと表示画像
+	# カテゴリのアイコン設定！（いい感じに）
 	icon = generic_industry
 
-	# GFX_を入れること、ファイル名拡張子は不要
+	# カテゴリの表示画像（GFX_を入れること、ファイル名拡張子は不要）
 	picture = "GFX_decision_cat_picture_operational_planning"
 
-	#カテゴリの表示権限（例：研究完了後に表示）
+	# カテゴリの表示設定（今回は常に表示！トリガーを用意して表示させるのもアリ）
 	visible = {
 		always = yes
 	}
 
-	#カテゴリの表示優先度（数値が低いほど上位に表示される）
+	# カテゴリの表示優先度（埋もれないように！）
 	priority = 3
 }
